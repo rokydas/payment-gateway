@@ -1,24 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PaymentProcess from './Components/PaymentProcess/PaymentProcess';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <br/><br/><h1 className="text-center">Please Pay For Me</h1>
+      <h3 className="text-center">Enter your credit or debit card information</h3><br/><br/>
+      <PaymentProcess></PaymentProcess>
     </div>
   );
 }
